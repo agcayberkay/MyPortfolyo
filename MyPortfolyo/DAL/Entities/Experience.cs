@@ -2,7 +2,7 @@
 {
     public class Experience
     {
-        public int ExpId { get; set; }
+        public int ExperienceId { get; set; }
         public string Header { get; set; }
         public string Title { get; set; }
         public string Date { get; set; }
