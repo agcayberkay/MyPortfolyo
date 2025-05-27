@@ -1,0 +1,34 @@
+﻿@model List<About>
+@{
+    ViewData["Title"] = "AboutList";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Hakkımda</div>
+    </div>
+    <div class="card-body">
+        <form>
+
+            @foreach (var item in Model)
+            {
+                <input type="hidden" asp-for="@item.AboutId" />
+                <label>Başlık</label>
+                <input type="text" asp-for="@item.Title" class="form-control" />
+                <br />
+                <label>Açıklama</label>
+                <input type="text" asp-for="@item.SubDesc" class="form-control" />
+                <br />
+                <label>Detay</label>
+                <textarea rows="12" class="form-control" asp-for="@item.Details" class="form-control"> </textarea>
+                <br />
+                <a href="/About/UpdateAbout/@item.AboutId" class="btn btn-success">Güncelleme Sayfasına Git</a>
+
+            }
+
+        </form>
+    </div>
+</div>
+
+

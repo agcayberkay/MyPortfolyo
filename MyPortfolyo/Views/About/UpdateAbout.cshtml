@@ -1,0 +1,30 @@
+﻿@model About
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">Hakkımda</div>
+    </div>
+    <div class="card-body">
+        <form method="post">
+
+            <input type="hidden" asp-for="AboutId" />
+            <label>Başlık</label>
+            <input type="text" asp-for="Title" class="form-control" />
+            <br />
+            <label>Açıklama</label>
+            <input type="text" asp-for="SubDesc" class="form-control" />
+            <br />
+            <label>Detay</label>
+            <textarea rows="12" class="form-control" asp-for="Details" class="form-control"> </textarea>
+            <br />
+            <button type="submit" class="btn btn-warning">Hakkımda Güncelle</button>
+            <button type="submit" class="btn btn-danger" href="/About/AboutList">İptal</button>
+        </form>
+    </div>
+</div>
+
+
