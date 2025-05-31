@@ -1,0 +1,32 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="main-panel">
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Mesaj Detayı</div>
+        </div>
+        <div class="card-body">
+            <form>
+
+                <input type="hidden" asp-for="MessageId" />
+                <label>Gönderen</label>
+                <input type="text" asp-for="NameSurname" class="form-control" />
+                <br />
+                <label>Konu</label>
+                <input type="text" asp-for="Subject" class="form-control" />
+                <br />
+                <label>Gönderme Tarihi</label>
+                <input type="text" asp-for="SendDate" class="form-control" />
+                <br />
+                <label>Detay</label>
+                <textarea rows="12" class="form-control" asp-for="MessageDetail" class="form-control"> </textarea>
+                <br />
+                <td><a href="/Message/Inbox/" class="btn btn-primary">Mesaj Kutusuna Dön</a></td>
+            </form>
+        </div>
+    </div>
+</div>
