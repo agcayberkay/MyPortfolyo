@@ -22,6 +22,7 @@ namespace MyPortfolyo.Controllers
         [HttpPost]
         public IActionResult AddToDo(ToDoList toDo)
         {
+            toDo.Status = false;
             portfolioContext.ToDoList.Add(toDo);
             portfolioContext.SaveChanges();
             return RedirectToAction("Index");

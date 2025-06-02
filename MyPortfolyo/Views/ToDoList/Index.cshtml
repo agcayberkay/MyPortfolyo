@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
 }
 <div class="main-panel">
     <div class="content">
@@ -31,27 +32,28 @@
                                 <tbody>
                                     @foreach (var item in Model)
                                     {
+                                        count++;
                                         <tr>
-                                            <td>@item.ToDoListId</td>
+                                            <td>@count</td>
                                             <td>@item.Title</td>
                                             <td>@item.Date</td>
-                                            @if (item.Status == true)
+                                            @if (item.Status == false)
                                             {
-                                                <td><a href="/ToDoList/CompletedToDo/@item.ToDoListId" class="btn btn-dark">Yapıldı</a></td>
+                                                <td><a href="/ToDoList/CompletedToDo/@item.ToDoListId" class="btn btn-info">Yapıldı</a></td>
 
                                             }
                                             else
                                             {
-                                                <td><a href="/ToDoList/UnCompletedToDo/@item.ToDoListId" class="btn btn-info">Yapılmadı</a></td>
+                                                <td><a href="/ToDoList/UnCompletedToDo/@item.ToDoListId" class="btn btn-dark">Yapılmadı</a></td>
 
                                             }
                                             <td><a href="/ToDoList/DeleteToDo/@item.ToDoListId" class="btn btn-danger">Sil</a></td>
-                                            <td><a href="/ToDoList/ToDo/@item.ToDoListId" class="btn btn-success">Güncelle</a></td>
+                                            <td><a href="/ToDoList/UpdateToDo/@item.ToDoListId" class="btn btn-success">Güncelle</a></td>
                                         </tr>
                                     }
                                 </tbody>
                             </table>
-                            <a href="/Experience/CreateExperience/" class="btn btn-primary">Yeni Deneyim Ekle</a>
+                            <a href="/ToDoList/AddToDo/" class="btn btn-primary">Yeni Deneyim Ekle</a>
                         </div>
                     </div>
                 </div>
