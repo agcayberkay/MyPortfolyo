@@ -73,7 +73,7 @@ PROJEYE GENEL BAKIŞ
 
 ![Ekran görüntüsü 2025-06-03 100003](https://github.com/user-attachments/assets/d049ce03-7d87-496f-b595-ed2c69c5f9b0)
 
-![Ekran görüntüsü 2025-06-03 100033](https://github.com/user-attachments/assets/1ecde1a4-0033-4fa4-9d6f-4b572e18d870)
+
 
 ![Ekran görüntüsü 2025-06-03 100045](https://github.com/user-attachments/assets/7c0427ce-39ca-4b12-8e68-82533a77fdec)
 
@@ -81,9 +81,7 @@ PROJEYE GENEL BAKIŞ
 
 ![Ekran görüntüsü 2025-06-03 101409](https://github.com/user-attachments/assets/28480a3f-4eb4-4ae7-a70d-a7b1e8a9ba9d)
 
-![Ekran görüntüsü 2025-06-03 101417](https://github.com/user-attachments/assets/bf0ecf04-f235-463a-8f2a-9e5d56ad6c11)
 
-![Ekran görüntüsü 2025-06-03 101424](https://github.com/user-attachments/assets/717bc661-c92f-48d7-92e7-87b9fa959968)
 
 
 
