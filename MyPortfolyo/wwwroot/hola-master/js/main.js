@@ -334,58 +334,35 @@
     };
 
 
-    /* Contact Form
-     * ------------------------------------------------------ */
-    var ssContactForm = function() {
+    $(document).ready(function () {
+        $('#contactForm').on('submit', function (e) {
+            e.preventDefault(); // formun klasik submitini engelle
 
-        /* local validation */
-	    $('#contactForm').validate({
-        
-            /* submit via ajax */
-            submitHandler: function(form) {
-    
-                var sLoader = $('.submit-loader');
-    
-                $.ajax({
-    
-                    type: "POST",
-                    url: "inc/sendEmail.php",
-                    data: $(form).serialize(),
-                    beforeSend: function() { 
-    
-                        sLoader.slideDown("slow");
-    
-                    },
-                    success: function(msg) {
-    
-                        // Message was sent
-                        if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
-                        }
-                        // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }
-    
-                    },
-                    error: function() {
-    
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
-                        $('.message-warning').slideDown("slow");
-    
+            var form = $(this);
+            var url = form.attr('action');
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(),
+                success: function (res) {
+                    if (res.success) {
+                        $('.message-success').text(res.message).show();
+                        $('.message-warning').hide();
+                        form.trigger("reset"); // formu temizle
+                    } else {
+                        $('.message-warning').text(res.message || "Mesaj gönderilemedi.").show();
+                        $('.message-success').hide();
                     }
-    
-                });
-            }
-    
+                },
+                error: function () {
+                    $('.message-warning').text("Sunucu hatasý. Lütfen tekrar deneyin.").show();
+                    $('.message-success').hide();
+                }
+            });
         });
-    };
+    });
+
 
 
    /* Back to Top

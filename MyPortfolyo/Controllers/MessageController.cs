@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyPortfolyo.DAL.Context;
+using MyPortfolyo.DAL.Entities;
 
 namespace MyPortfolyo.Controllers
 {
@@ -39,6 +40,20 @@ namespace MyPortfolyo.Controllers
         {
             var values = portfolioContext.Messages.Find(id);
             return View(values);
+        }
+
+        [HttpPost]
+        public IActionResult SendMessage(Message message)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, message = "Geçersiz veri." });
+
+            message.SendDate = DateTime.Now;
+            message.IsRead = false;
+            portfolioContext.Messages.Add(message);
+            portfolioContext.SaveChanges();
+
+            return Ok(new { success = true, message = "Mesajınız gönderildi, teşekkür ederiz!" });
         }
     }
 }

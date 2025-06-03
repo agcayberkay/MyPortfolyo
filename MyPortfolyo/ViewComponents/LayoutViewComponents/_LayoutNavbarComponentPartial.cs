@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿    using Microsoft.AspNetCore.Mvc;
 using MyPortfolyo.DAL.Context;
 
 namespace MyPortfolyo.ViewComponents.LayoutViewComponents
@@ -9,8 +9,8 @@ namespace MyPortfolyo.ViewComponents.LayoutViewComponents
         public IViewComponentResult Invoke()
         {
             ViewBag.toDoListCount = portfolioContext.ToDoList.Where(x=> x.Status==false).Count();
-            var value = portfolioContext.ToDoList.Count(x => x.Status == false);
-            return View(value);
+            var values = portfolioContext.ToDoList.Where(x => x.Status == false).ToList();
+            return View(values);
         }
     }
 }

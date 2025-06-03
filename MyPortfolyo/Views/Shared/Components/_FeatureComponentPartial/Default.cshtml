@@ -1,6 +1,5 @@
 ﻿@model List<MyPortfolyo.DAL.Entities.Feature>
-<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="@ViewBag.v" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
+<section id="home" class="s-home page-hero target-section" style="background-image: url('https://i.hizliresim.com/s487srx.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
 
@@ -13,19 +12,12 @@
                 <h3>@item.Title</h3>
 
                 <h1>
-                    @* Ben Berkay AĞÇAY. <br>
-                    .NET Yazılım Geliştiriciyim. <br>
- *@
                     @item.FeatureDesc
                 </h1>
 
                 <div class="home-content__buttons">
-                    <a href="#works" class="smoothscroll btn btn--stroke">
-                        Son Projelerim
-                    </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        Hakkımda
-                    </a>
+                    <a href="#works" class="smoothscroll btn btn--stroke">Neler Yapabilirim?</a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">Hakkımda</a>
                 </div>
 
                 <div class="home-content__scroll">
@@ -42,19 +34,16 @@
 
     <ul class="home-social">
         <li>
-            <a href="#"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            <a href="https://github.com/agcayberkay" target="_blank"><i class="im im-github" aria-hidden="true"></i><span>GitHub</span></a>
         </li>
         <li>
-            <a href="#"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            <a href="https://www.facebook.com/berkay.agcay?locale=tr_TR" target="_blank"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
         </li>
         <li>
-            <a href="#"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            <a href="https://x.com/agcayberkayy" target="_blank"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
         </li>
         <li>
-            <a href="#"><i class="im im-behance" aria-hidden="true"></i><span>Behance</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-pinterest" aria-hidden="true"></i><span>Pinterest</span></a>
+            <a href="https://www.instagram.com/agcayberkay9/?next=%2F" target="_blank"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
         </li>
     </ul>
     <!-- end home-social -->
