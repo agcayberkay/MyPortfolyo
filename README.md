@@ -89,8 +89,6 @@ PROJEYE GENEL BAKIŞ
 
 ![Ekran görüntüsü 2025-06-03 103021](https://github.com/user-attachments/assets/f9699e3b-cc65-466e-9b26-dff2c77e136f)
 
-![Ekran görüntüsü 2025-06-03 103015](https://github.com/user-attachments/assets/f79ae104-340e-48ec-b1dd-93f578a63663)
-
 ![Ekran görüntüsü 2025-06-03 103005](https://github.com/user-attachments/assets/986b9733-7018-4b67-afec-896fbd0e5ccb)
 
 ![Ekran görüntüsü 2025-06-03 102942](https://github.com/user-attachments/assets/49bf77d9-86a4-44c1-8c6f-2b9fb5f1a1d0)
