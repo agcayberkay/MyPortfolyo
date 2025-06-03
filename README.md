@@ -72,3 +72,27 @@ Bu proje süreci bana şu konularda yetkinlik kazandırdı:
 PROJEYE GENEL BAKIŞ
 
 ![Ekran görüntüsü 2025-06-03 100003](https://github.com/user-attachments/assets/d049ce03-7d87-496f-b595-ed2c69c5f9b0)
+
+![Ekran görüntüsü 2025-06-03 100033](https://github.com/user-attachments/assets/1ecde1a4-0033-4fa4-9d6f-4b572e18d870)
+
+![Ekran görüntüsü 2025-06-03 100045](https://github.com/user-attachments/assets/7c0427ce-39ca-4b12-8e68-82533a77fdec)
+
+![Ekran görüntüsü 2025-06-03 100106](https://github.com/user-attachments/assets/35bcebf6-7645-442d-96c0-60f43556bf0b)
+
+![Ekran görüntüsü 2025-06-03 101409](https://github.com/user-attachments/assets/28480a3f-4eb4-4ae7-a70d-a7b1e8a9ba9d)
+
+![Ekran görüntüsü 2025-06-03 101417](https://github.com/user-attachments/assets/bf0ecf04-f235-463a-8f2a-9e5d56ad6c11)
+
+![Ekran görüntüsü 2025-06-03 101424](https://github.com/user-attachments/assets/717bc661-c92f-48d7-92e7-87b9fa959968)
+
+![Ekran görüntüsü 2025-06-03 101437](https://github.com/user-attachments/assets/7e6fdb7a-d813-49ee-899d-3d6c75ea2cb7)
+
+![Ekran görüntüsü 2025-06-03 101445](https://github.com/user-attachments/assets/d699dde3-5a30-422d-a296-65cefffd5004)
+
+![Ekran görüntüsü 2025-06-03 101508](https://github.com/user-attachments/assets/903f9a9d-b58b-47bb-b9ef-a50ed3be489d)
+
+![Ekran görüntüsü 2025-06-03 101501](https://github.com/user-attachments/assets/72cbd519-8fb7-41eb-a049-914baf7934ad)
+
+![Ekran görüntüsü 2025-06-03 101452](https://github.com/user-attachments/assets/34ed80a2-b11f-47ed-a659-a31f72b92932)
+
+
