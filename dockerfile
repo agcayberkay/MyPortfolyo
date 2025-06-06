@@ -2,18 +2,22 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Proje dosyasını kopyala ve bağımlılıkları yükle
-COPY *.csproj ./
-RUN dotnet restore
+# Solution veya proje dosyasını kopyala
+COPY ./MyPortfolyo/*.csproj ./MyPortfolyo/
 
-# Tüm dosyaları kopyala ve yayınla
-COPY . ./
-RUN dotnet publish -c Release -o out
+# Bağımlılıkları yükle
+RUN dotnet restore ./MyPortfolyo/MyPortfolyo.csproj
 
-# Çalışma aşaması
+# Tüm dosyaları kopyala
+COPY . .
+
+# Publish işlemi
+RUN dotnet publish ./MyPortfolyo/MyPortfolyo.csproj -c Release -o out
+
+# Çalıştırma aşaması
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+
 COPY --from=build /app/out .
 
-# Uygulamayı başlat
 ENTRYPOINT ["dotnet", "MyPortfolyo.dll"]
